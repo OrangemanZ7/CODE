@@ -60,17 +60,17 @@ const OrdemDeServicoForm: React.FC<OrdemDeServicoFormProps> = ({ onFormSubmit, o
     <form onSubmit={handleSubmit}>
       <div className="mb-4">
         <label htmlFor="titulo" className="block text-sm font-medium text-gray-700">Título</label>
-        <input type="text" name="titulo" value={formData.titulo} onChange={handleChange} required className="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        <input type="text" name="titulo" value={formData.titulo} onChange={handleChange} required className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" />
       </div>
 
       <div className="mb-4">
         <label htmlFor="descricao" className="block text-sm font-medium text-gray-700">Descrição do Problema</label>
-        <textarea name="descricao" value={formData.descricao} onChange={handleChange} required rows={4} className="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        <textarea name="descricao" value={formData.descricao} onChange={handleChange} required rows={4} className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" />
       </div>
 
       <div className="mb-4">
         <label htmlFor="equipamentoId" className="block text-sm font-medium text-gray-700">Equipamento</label>
-        <select name="equipamentoId" value={formData.equipamentoId} onChange={handleChange} required disabled={loading} className="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <select name="equipamentoId" value={formData.equipamentoId} onChange={handleChange} required disabled={loading} className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2">
           {loading ? (
             <option>Carregando...</option>
           ) : equipamentos.length > 0 ? (

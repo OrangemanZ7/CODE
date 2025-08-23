@@ -163,7 +163,7 @@ const WorkOrderDetailPage = () => {
                   id="status" 
                   value={selectedStatus}
                   onChange={(e) => setSelectedStatus(e.target.value)}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm capitalize"
+                  className="mt-2 p-2 block w-full border-gray-300 rounded-md shadow-sm capitalize"
                 >
                   <option value="aberto">Aberto</option>
                   <option value="em_andamento">Em Andamento</option>
@@ -179,7 +179,7 @@ const WorkOrderDetailPage = () => {
                   id="prioridade"
                   value={selectedPrioridade}
                   onChange={(e) => setSelectedPrioridade(e.target.value)}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm capitalize"
+                  className="mt-2 p-2 block w-full border-gray-300 rounded-md shadow-sm capitalize"
                 >
                   <option value="baixa">Baixa</option>
                   <option value="media">Média</option>
@@ -193,7 +193,7 @@ const WorkOrderDetailPage = () => {
                   id="technician"
                   value={selectedTechnician}
                   onChange={(e) => setSelectedTechnician(e.target.value)}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+                  className="mt-2 p-2 block w-full border-gray-300 rounded-md shadow-sm"
                 >
                   <option value="">Não atribuído</option>
                   {technicians.map(tech => (

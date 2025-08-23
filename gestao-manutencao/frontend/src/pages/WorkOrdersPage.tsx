@@ -209,13 +209,11 @@ const WorkOrdersPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {ordens.length > 0 ? (
+                  {ordens.length > 0 && (
                     ordens.map((os) => (
-                      // --- 3. A LÓGICA DO LINK FOI REMOVIDA DAQUI ---
                       <tr
                         key={os._id}
                         className="border-b hover:bg-gray-100 cursor-pointer"
-                        // E ADICIONADA AQUI, NO ONCLICK
                         onClick={() => navigate(`/workorders/${os._id}`)}
                       >
                         <td className="py-2 px-4 font-medium">{os.titulo}</td>
@@ -249,16 +247,6 @@ const WorkOrdersPage = () => {
                         </td>
                       </tr>
                     ))
-                  ) : (
-                    <tr>
-                      <td
-                        colSpan={7}
-                        className="py-4 px-4 text-center text-gray-500"
-                      >
-                        Nenhuma ordem de serviço encontrada com os filtros
-                        atuais.
-                      </td>
-                    </tr>
                   )}
                 </tbody>
               </table>

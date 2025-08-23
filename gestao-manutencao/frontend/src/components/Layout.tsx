@@ -51,7 +51,7 @@ const Layout = () => {
             )}
             <div className="flex items-center gap-2">
               <span className="text-gray-700">
-                Olá, {auth?.nome} ({auth?.perfil})
+                {auth?.nome} ({auth?.perfil})
               </span>
               <button
                 onClick={handleLogout}
@@ -149,7 +149,7 @@ const Layout = () => {
             <div className="border-t border-gray-200 pt-4 pb-3">
               <div className="flex items-center px-3">
                 <p className="text-base font-medium text-gray-800">
-                  Olá, {auth?.nome}
+                  {auth?.nome} ({auth?.perfil})
                 </p>
               </div>
               <div className="mt-3 px-2 space-y-1">

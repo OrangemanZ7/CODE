@@ -125,7 +125,7 @@ const EquipamentosPage = () => {
             setFiltroLocalizacao(e.target.value);
             setPage(1);
           }}
-          className="border-gray-300 rounded-md shadow-sm focus:ring-0"
+          className="border-gray-300 rounded-md shadow-sm focus:ring-0 p-2"
         />
         <select
           value={filtroTipo}
@@ -133,7 +133,7 @@ const EquipamentosPage = () => {
             setFiltroTipo(e.target.value);
             setPage(1);
           }}
-          className="border-gray-300 rounded-md shadow-sm focus:ring-0"
+          className="border-gray-300 rounded-md shadow-sm focus:ring-0 p-2"
         >
           <option value="">Todos os Tipos</option>
           <option>Desktop</option>
@@ -149,7 +149,7 @@ const EquipamentosPage = () => {
             setFiltroStatus(e.target.value);
             setPage(1);
           }}
-          className="border-gray-300 rounded-md shadow-sm focus:ring-0"
+          className="border-gray-300 rounded-md shadow-sm focus:ring-0 p-2"
         >
           <option value="">Todos os Status</option>
           <option value="operacional">Operacional</option>
@@ -158,7 +158,7 @@ const EquipamentosPage = () => {
         </select>
         <button
           onClick={limparFiltros}
-          className="text-sm text-blue-600 hover:underline"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Limpar Filtros
         </button>
