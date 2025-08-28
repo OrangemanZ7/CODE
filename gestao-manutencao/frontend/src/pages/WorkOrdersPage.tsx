@@ -45,6 +45,7 @@ const WorkOrdersPage = () => {
         setOrdens(data.ordens);
         setTotalPages(data.pages);
       } catch (err) {
+        console.log(err)
         setError("Não foi possível carregar as ordens de serviço.");
       } finally {
         setLoading(false);
@@ -64,7 +65,7 @@ const WorkOrdersPage = () => {
       // Adiciona a nova OS à lista (será atualizada de qualquer forma pelo useEffect)
       setOrdens((prev) => [novaOS, ...prev]);
       setIsModalOpen(false);
-    } catch (error: any) {
+    } catch (error) {
       alert(
         "Erro ao abrir Ordem de Serviço: " +
           (error.response?.data?.message || "Erro desconhecido")

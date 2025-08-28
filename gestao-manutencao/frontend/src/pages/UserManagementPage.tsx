@@ -76,7 +76,7 @@ const UserForm = ({
           value={formData.nome}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
         />
       </div>
       <div className="mb-4">
@@ -87,7 +87,7 @@ const UserForm = ({
           value={formData.email}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
         />
       </div>
       <div className="mb-4">
@@ -98,7 +98,7 @@ const UserForm = ({
           value={formData.senha}
           onChange={handleChange}
           placeholder={initialData ? "Deixe em branco para não alterar" : ""}
-          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
         />
       </div>
       <div className="mb-4">
@@ -108,7 +108,7 @@ const UserForm = ({
           value={formData.perfil}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+          className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
         >
           <option value="funcionario">Funcionário</option>
           <option value="tecnico">Técnico</option>

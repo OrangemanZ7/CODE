@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import api from '../api/apiService';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const LoginPage = () => {
   // Estado para guardar os valores dos inputs
@@ -39,6 +39,7 @@ const LoginPage = () => {
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Gestão de Manutenção
         </h1>
+        
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
@@ -79,6 +80,17 @@ const LoginPage = () => {
             </button>
           </div>
         </form>
+        
+      </div>
+      <p className='text-gray-400 font-bold text-xl text-center mt-8 mb-4'>GestManApp 1.00</p>
+      <p className='text-gray-400 text-xs text-center mb-4'>@ OrangeSoft 2025 - Ricardo Laranjeira</p>
+      <div className='flex gap-8 space-between'>
+        <Link to="mailto:ricardo.laranjeira.74@gmail.com">
+          <p className='text-gray-400 text-xs text-center'>ricardo.laranjeira.74@gmail.com</p>
+        </Link>
+        <Link to="https://whats.me/+5565996117368">
+          <p className='text-gray-400 text-xs text-center'>+55 (65) 99611-7368</p>
+        </Link>
       </div>
     </div>
   );

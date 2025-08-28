@@ -46,6 +46,7 @@ const EquipamentosPage = () => {
       setEquipamentos(data.equipamentos);
       setTotalPages(data.pages);
     } catch (err) {
+      console.log(err)
       setError("Não foi possível carregar os equipamentos.");
     } finally {
       setLoading(false);
@@ -66,7 +67,7 @@ const EquipamentosPage = () => {
       });
       fetchEquipamentos();
       setIsFormModalOpen(false);
-    } catch (error: any) {
+    } catch (error) {
       setNotification({
         isOpen: true,
         message:
